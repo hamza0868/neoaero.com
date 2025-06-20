@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVOCARB | Advanced CO₂ to O₂ Conversion Systems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0B5E8E;
+            --secondary: #00C897;
+            --dark: #1A2E35;
+            --light: #F5F7FA;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            line-height: 1.8;
+            color: var(--dark);
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(11, 94, 142, 0.8), rgba(0, 200, 151, 0.6)),
+                url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920');
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            color: white;
+            text-align: center;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .process-diagram {
+            width: 100%;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .molecule-graphic {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .molecule-circle {
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: var(--primary);">NOVOCARB</h1>
+        <nav>
+            <a href="#tech" style="margin: 0 1rem; text-decoration: none; color: var(--dark);">Technology</a>
+            <a href="#applications" style="margin: 0 1rem; text-decoration: none; color: var(--dark);">Applications</a>
+            <a href="#team" style="margin: 0 1rem; text-decoration: none; color: var(--dark);">Team</a>
+            <a href="#contact"
+                style="margin: 0 1rem; text-decoration: none; color: var(--primary); font-weight: 600;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div style="width: 100%;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem;">The Future of Carbon Conversion</h1>
+            <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto 2rem;">Industrial-scale systems converting CO₂
+                emissions into pure oxygen with unprecedented efficiency</p>
+            <button
+                style="background: var(--secondary); color: white; border: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 50px; cursor: pointer;">Explore
+                Our Technology</button>
+        </div>
+    </section>
+
+    <section id="tech" style="padding: 5% 10%; background: var(--light);">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Our Proprietary Technology</h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="tech-card" style="flex: 1 1 300px;">
+                <div class="molecule-graphic">
+                    <div class="molecule-circle"
+                        style="width: 80px; height: 80px; background: var(--primary); top: 20px; left: 60px;">CO₂</div>
+                    <div class="molecule-circle"
+                        style="width: 60px; height: 60px; background: var(--secondary); top: 100px; left: 30px;">O</div>
+                    <div class="molecule-circle"
+                        style="width: 60px; height: 60px; background: var(--secondary); top: 100px; left: 110px;">O
+                    </div>
+                </div>
+                <h3>Molecular Separation</h3>
+                <p>Our metal-organic framework (MOF) filters selectively capture CO₂ molecules with 94% efficiency, even
+                    at low concentrations (400-1000 ppm).</p>
+            </div>
+
+            <div class="tech-card" style="flex: 1 1 300px;">
+                <svg width="200" height="200" viewBox="0 0 200 200" style="margin: 0 auto; display: block;">
+                    <rect x="20" y="80" width="160" height="40" fill="#0B5E8E" opacity="0.8" />
+                    <circle cx="50" cy="100" r="30" fill="#00C897" />
+                    <circle cx="150" cy="100" r="30" fill="#FFFFFF" />
+                    <path d="M80 100 L120 100" stroke="white" stroke-width="4" stroke-dasharray="5,5" />
+                </svg>
+                <h3>Electrochemical Conversion</h3>
+                <p>Low-voltage (2.3V) catalytic process splits CO₂ into oxygen and solid carbon at 73% energy
+                    efficiency, outperforming conventional methods.</p>
+            </div>
+
+            <div class="tech-card" style="flex: 1 1 300px;">
+                <div
+                    style="width: 200px; height: 150px; background: linear-gradient(135deg, #0B5E8E, #00C897); margin: 0 auto; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <div style="color: white; font-size: 2rem; font-weight: bold;">O₂ 99.9%</div>
+                </div>
+                <h3>Pure Oxygen Output</h3>
+                <p>Medical-grade oxygen (99.9% purity) is safely collected while carbon byproducts are harvested for
+                    industrial use.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <img src="https://cdn-icons-png.flaticon.com/512/4470/4470357.png" width="100" style="margin-bottom: 1rem;">
+            <h3>Technical Specifications</h3>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary);">94%</div>
+                    <p>CO₂ Capture Rate</p>
+                </div>
+                <div class="stat-box">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary);">2.3V</div>
+                    <p>Operating Voltage</p>
+                </div>
+                <div class="stat-box">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary);">99.9%</div>
+                    <p>O₂ Purity</p>
+                </div>
+                <div class="stat-box">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary);">3x</div>
+                    <p>More Efficient Than Plants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="applications" style="padding: 5% 10%;">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Applications</h2>
+
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+                <div
+                    style="flex: 1 1 300px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600"
+                        style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3>Industrial Emissions</h3>
+                        <p>Retrofit solutions for factories and power plants to meet carbon neutrality goals while
+                            generating valuable oxygen byproducts.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="flex: 1 1 300px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1582719471380-c3a2bce7b3e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600"
+                        style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3>Urban Air Purification</h3>
+                        <p>Modular units for cities to reduce urban CO₂ levels while supplementing medical oxygen
+                            supplies for hospitals.</p>
+                    </div>
+                </div>
+
+                <div
+                    style="flex: 1 1 300px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600"
+                        style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3>Space Exploration</h3>
+                        <p>Closed-loop life support systems for lunar bases and Mars missions, reducing reliance on
+                            Earth resupply.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: var(--primary); color: white; padding: 5% 10%; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Join the Carbon Revolution</h2>
+        <p style="max-width: 700px; margin: 0 auto 2rem;">We're seeking partners, investors, and researchers to scale
+            this technology. Contact us to collaborate.</p>
+
+        <form style="max-width: 500px; margin: 0 auto;">
+            <input type="text" placeholder="Name"
+                style="width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: none;">
+            <input type="email" placeholder="Email"
+                style="width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: none;">
+            <textarea placeholder="Your Message"
+                style="width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: none; height: 150px;"></textarea>
+            <button type="submit"
+                style="background: var(--secondary); color: white; border: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 50px; cursor: pointer; width: 100%;">Send
+                Message</button>
+        </form>
+    </section>
+
+    <footer style="background: var(--dark); color: white; text-align: center; padding: 2rem;">
+        <p>© 2023 NOVOCARB | Advanced Carbon Conversion Technology</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 0.5rem;">Privacy Policy</a>
+            <a href="#" style="color: white; margin: 0 0.5rem;">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for stats
+        document.addEventListener('DOMContentLoaded', function () {
+            const statBoxes = document.querySelectorAll('.stat-box div');
+
+            statBoxes.forEach(box => {
+                const target = parseInt(box.textContent);
+                let current = 0;
+                const increment = target / 20;
+
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        box.textContent = Math.ceil(current);
+                        setTimeout(updateCounter, 50);
+                    } else {
+                        box.textContent = target;
+                    }
+                };
+
+                updateCounter();
+            });
+        });
+    </script>
+</body>
+
+</html>
